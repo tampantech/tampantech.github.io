@@ -1,0 +1,78 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'TampanTech'
+theme = 'typo'
+
+[taxonomies]
+tag = 'tags'
+
+# Google analytics code
+googleAnalytics = "G-xxxxxxxxx"
+
+[params]
+# Meta description
+description = "A Tech Blog"
+
+# Appearance settings
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content is markdown
+homeIntroTitle = 'Hi!'
+homeIntroContent = """
+Saya seorang elektrical Engineer terobsesi dengan radio. Beberapa perangkat alat elektrical yang saya buat sebenarnya perangkat biomedis dan perangkat iot. Masih berusaha untuk menjadi radio Engineer yang beneran.
+"""
+
+# Collection to display on home
+homeCollectionTitle = 'Posts'
+homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '2 Jan 2006'
+
+# Breadcrumbs
+breadcrumbs = true
+
+# Social icons
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/aziz-faozi-169102244/"
+
+[[params.social]]
+name = "medium"
+url = "https://medium.com/@faoziaziz"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/faoziaziz"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/portofolio/"
+
+[[params.menu]]
+name = "posts"
+url = "/portofolio/posts"
+
+[[params.menu]]
+name = "about"
+url = "/portofolio/about"
+
+# Syntax highligth on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+# Giscus comments
+[params.giscus]
+enable = false
+repo = "faoziaziz/repo"
+repoid = "repoId"
+category = "General"
+categoryid = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"
