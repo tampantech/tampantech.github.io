@@ -52,15 +52,15 @@ url = "https://github.com/faoziaziz"
 # Main menu pages
 [[params.menu]]
 name = "home"
-url = "/portofolio/"
+url = "/"
 
 [[params.menu]]
 name = "posts"
-url = "/portofolio/posts"
+url = "/posts"
 
 [[params.menu]]
 name = "about"
-url = "/portofolio/about"
+url = "/about"
 
 # Syntax highligth on code blocks
 [markup]
