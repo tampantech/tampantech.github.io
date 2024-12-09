@@ -1,5 +1,5 @@
 ---
-date = '2024-12-09T11:08:25+07:00'
+date : '2024-12-09T11:08:25+07:00'
 toc : true
 summary : "Nxp Build Project android"
 description : "Nxp build project for android"
