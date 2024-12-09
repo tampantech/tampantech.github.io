@@ -1,6 +1,14 @@
 ---
 date : '2024-12-09T11:35:16+07:00'
 title : 'Build Kernel Basic'
+summary : "Build Kernel basic"
+description : "Build kernel basic"
+readTime: true
+autonumber: true
+math: true
+tags: ["Electronics", "Qucs"]
+showTags: false
+hideBackToTop: false
 ---
 
 Karena biasanya kita membutuhkan cara untuk membuat kernel. Mungkin kita perlu untuk pertama kali bagaimana cara kita untuk membuildnya, kemudian kita mensimulasikannya dengan qemu lalu melakukan modifikasi pada kernel itu sendiri.
@@ -81,3 +89,6 @@ find . | cpio -o --format=newc > ../initramfs.img
 cd ..
 ```
 ## run dengan qemu 
+```bash
+qemu-system-x86_64 -kernel arch/x86/boot/bzImage -initrd initramfs.img -append "console=ttyS0 init=/bin/sh" -nographic
+```
